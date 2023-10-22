@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+    <title>PRUEBA</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src = "validaciones.js"></script>
+    <script>
+        //ambito global de la variable a
+        a = 10;
+        function test(){
+            alert(a);
+        }
+    </script>
+    
+</head>  
+<body>    
+    <p id="miparrafo">Elemento párrafo. Haz click en el botón para modificar</p>
+    <button onclick="modificar()">PULSA AQUÍ</button>
+    
+    <p id="miparrafo2">Elemento párrafo. Haz click en el botón para modificar</p>
+    <button onclick='javascript:{
+        var time = new Date();
+        document.getElementById("miparrafo2").innerText = 
+        "Modificado el texto a través de un elemento HTML " + time.toDateString();
+        }'>PULSA AQUÍ</button>
+        
+    <p id="miparrafo3">Elemento párrafo. Haz click en el botón para modificar</p>
+    <button onclick="test();">PULSA AQUÍ</button>
+
+   
+</body>  
+</html>
